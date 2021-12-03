@@ -1,0 +1,125 @@
+.slider
+{
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px hsl(0, 0%, 76%);
+    position: relative;
+}
+
+.slider ul
+{
+    list-style-type: none ;
+    margin: 0;
+    padding: 0;
+}
+
+.slider ul li
+{
+    position: relative;
+    display: none;
+    height: 350px;
+}
+
+.slider ul li img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.slider ul li span
+{
+    position: absolute;
+    bottom: 0;
+    background: hsl(0, 1%, 72%, .1);
+    left:0;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+/*buttons*/
+.slider .buttons
+{
+    position: absolute;
+    top: 50%;
+    width: 100%;   
+}
+
+.slider .buttons .next
+{
+    font-size: 4rem;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.slider .buttons .prev
+{
+    font-size: 4rem;
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.slider .buttons .prev:hover
+{
+    background: hsl(0, 0%, 25%);
+    height: auto;
+    border-radius: 5px;
+    color: hsl(0, 0%, 93%);
+}
+
+.slider .buttons .next:hover
+{
+    background: hsl(0, 0%, 25%);
+    height: auto;
+    border-radius: 5px;
+    color: hsl(0, 0%, 93%);
+}
+
+/*Animacion*/
+.slider ul li 
+{
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@keyframes fade 
+{
+    from 
+    {
+        opacity: .2;
+    }
+
+    to 
+    {
+        opacity: 1;
+    }
+}
+
+/*Parrafo del slider*/
+.parrafo_slider
+{
+    font-size: 15px;
+    width: auto;    
+    height: auto;
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(0, 0, 0, .8);
+    border-radius: 15px;
+}

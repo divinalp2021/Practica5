@@ -1,0 +1,258 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: Dosis ExtraLight;
+}
+
+h1
+{ 
+    font-family: Bertha Melanie;
+	padding:0px; 
+	text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+	color: #ffffff;
+    font-size: 3.6em;
+}
+
+header {
+    text-align: center;
+    border: 1px solid #000;
+    background: linear-gradient(to right, #f79ff2, #a773a3);
+    height: 70px;
+    margin: 5px;
+}
+
+body
+{ 
+    background-image: url("../images/puntitos.jpg") 
+}
+
+.logo
+{
+    width: 10%;
+    float: left;
+    margin: 5px;
+    border: 0;
+}
+
+body div.logo img
+{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+
+/*Inicio del menú*/
+#menu  
+{  
+    text-align: center;
+    font-size: 1em;
+    width: 85%;
+    margin: 20px auto;
+}
+   
+#menu ul 
+{ 
+    list-style-type: none;
+}
+
+#menu ul li.nivel1 
+{ 
+    float: left;
+    width: 150px;
+    margin-right: 2px;    
+}
+    
+#menu ul li a 
+{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #943b8f;
+    border: solid 2px rgb(248, 199, 240);
+    padding: 8px;
+    position: relative;    
+    z-index: 1;
+}
+    
+#menu ul li:hover 
+{
+    position: relative;
+}
+    
+#menu ul li a:hover, 
+#menu ul li:hover a.nivel1
+{
+    background-color: #601e70;
+    color: #000;
+    position: relative;    
+}
+    
+#menu ul li a.nivel1 
+{
+    display: block!important;display: none;
+    position: relative;  
+}
+    
+#menu ul li ul 
+{
+    display: none;  
+}
+    
+#menu ul li a:hover ul, 
+#menu ul li:hover ul 
+{
+    display: block;
+    position: absolute;
+    left: 0px;
+}
+    
+#menu ul li ul li a 
+{
+    width: 160px;
+    padding: 6px 0px 8px 0px;
+    border-top-color: rgb(7, 4, 4);    
+}
+
+#menu ul li ul li a:hover 
+{
+    border-top-color: #000;
+    position: relative;    
+}
+
+.contenedor
+{
+    background: linear-gradient(to bottom, #e16ffd, #be00ee) ;
+    margin: 150px 0px 40px 60px;
+    width: 90%;
+    height: 830px;
+    border: 1px solid black;
+    padding: 0;
+    position:relative;
+    border-radius: 15px;
+}
+
+section p
+{
+    width: 65%;
+    float: left;
+    margin: 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+section,aside 
+{
+    padding: 10px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    -o-border-radius:5px;
+    border-radius:5px;
+}
+
+aside 
+{
+    float: right;
+    width: 28%;
+    background-color: rgb(245, 8, 225);
+    color: #333;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+    margin-right: 27px;
+}
+
+aside p
+{
+    text-align: center;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    background: rgb(255, 255, 255, .8);
+    width: 50%;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 10px;
+    margin-left: 25%;
+    box-shadow: 5px 5px hsla(0, 0%, 100%, 0.801); 
+}
+
+footer 
+{
+    position: fixed;
+    Width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0px 10px 0px;
+    background-color: #a80eb6;
+    text-align: center;
+}
+
+
+footer p
+{
+    color: #fff;  
+}
+
+/*Sección de fecha*/
+.miFecha
+{
+    background-color: rgb(0, 0, 0, .8);
+    padding: 3px;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 12pt;                
+    border-radius: 6px;
+}
+
+.miFecha .anno
+{
+    background-color: #707070;
+    color: #ffe321;
+    padding: 2px;
+    font-size: 100%;
+    margin-bottom: 3px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.miFecha .dia
+{
+    background-color: #d45ef3;
+    color: #ffffff;
+    font-size: 300%;
+    padding: 2px 8px 5px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.miFecha .mes
+{
+    font-weight: bold;
+    font-size: 12px;
+    font-family: arial;
+}
+
+.cont-reloj
+{
+    width: 100%;
+    margin: 10px;    
+}
+
+.cont-fecha
+{
+    width: 110px;
+    margin-left: 36%;
+}
+
